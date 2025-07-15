@@ -6,6 +6,7 @@ asyncio-throttle
 aiohttp
 Pillow
 pdf2image
+pymupdf
 poppler-utils
 nest-asyncio
 requests
