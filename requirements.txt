@@ -1,6 +1,5 @@
 openai
 asyncio
-base64
 streamlit
 pydantic
 asyncio-throttle
