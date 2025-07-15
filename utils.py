@@ -79,8 +79,10 @@ def pdf_to_images(pdf_path, output_dir, fixed_length=1080, max_workers=4):
 # API Call function
 async def make_api_call(base64_image, prompt, schema, base_url, api_key):
     client = openai.AsyncClient(base_url= base_url, api_key=api_key)
+    model_list = await client.models.list()
+    model = model_list.data[0].id
     completion = await client.chat.completions.create(
-        model="Qwen/Qwen2.5-VL-32B-Instruct",
+        model=model,
         messages=[
             {
                 "role": "user",
