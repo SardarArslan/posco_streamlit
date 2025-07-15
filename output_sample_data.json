@@ -1,0 +1,154 @@
+[
+    {
+        "metadata": {
+            "HOLE_NO": "BH-1"
+        },
+        "sample_data": [
+            {
+                "Sample_number": "S-14",
+                "Depth": 14.0,
+                "Hits": "50/11",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-13",
+                "Depth": 13.0,
+                "Hits": "50/12",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-12",
+                "Depth": 12.0,
+                "Hits": "50/13",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-11",
+                "Depth": 11.0,
+                "Hits": "50/15",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-10",
+                "Depth": 10.0,
+                "Hits": "50/25",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-9",
+                "Depth": 9.0,
+                "Hits": "25/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-8",
+                "Depth": 8.0,
+                "Hits": "18/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-7",
+                "Depth": 7.0,
+                "Hits": "4/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-6",
+                "Depth": 6.0,
+                "Hits": "4/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-5",
+                "Depth": 5.0,
+                "Hits": "5/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-4",
+                "Depth": 4.0,
+                "Hits": "8/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-3",
+                "Depth": 3.0,
+                "Hits": "7/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-2",
+                "Depth": 2.0,
+                "Hits": "6/30",
+                "Method": "U.D.SAMPLE"
+            },
+            {
+                "Sample_number": "S-1",
+                "Depth": 1.0,
+                "Hits": "10/30",
+                "Method": "U.D.SAMPLE"
+            }
+        ]
+    },
+    {
+        "metadata": {
+            "HOLE_NO": "BH-2"
+        },
+        "sample_data": [
+            {
+                "Sample_number": "S-9",
+                "Depth": 11.0,
+                "Hits": "15/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-8",
+                "Depth": 9.5,
+                "Hits": "15/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-7",
+                "Depth": 8.0,
+                "Hits": "10/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-6",
+                "Depth": 8.0,
+                "Hits": "7/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-5",
+                "Depth": 8.0,
+                "Hits": "7/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-4",
+                "Depth": 8.0,
+                "Hits": "5/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-3",
+                "Depth": 8.0,
+                "Hits": "4/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-2",
+                "Depth": 4.5,
+                "Hits": "7/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            },
+            {
+                "Sample_number": "S-1",
+                "Depth": 2.6,
+                "Hits": "8/30",
+                "Method": "\uc790\uc5f0\uc2dc\ub8cc"
+            }
+        ]
+    }
+]

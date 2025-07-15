@@ -1,0 +1,94 @@
+[
+    {
+        "metadata": {
+            "HOLE_NO": "BH-1"
+        },
+        "soil_data": [
+            {
+                "depth_range": "0.0~2.0m",
+                "soil_name": "\ub9e4\ub9bd\uce35",
+                "soil_color": "\uac08\uc0c9, \ud68c\uc0c9",
+                "observation": "\ucd5c\uc0c1\ubd80 15cm \ucf58\ud06c\ub9ac\ud2b8 \ub9e4\ub9bd"
+            },
+            {
+                "depth_range": "2.0~4.5m",
+                "soil_name": "\ud1f4\uc801\uce35",
+                "soil_color": "\ud68c\uc0c9",
+                "observation": "\ubcf4\ud1b5 \uc5f0\uc57d"
+            },
+            {
+                "depth_range": "4.5~8.0m",
+                "soil_name": "\ud1f4\uc801\uce35",
+                "soil_color": "\ud68c\uc0c9",
+                "observation": "\uc5f0\uc57d~\ubcf4\ud1b5 \uc5f0\uc57d"
+            },
+            {
+                "depth_range": "8.0~10.0m",
+                "soil_name": "\ub9e4\ub9bd\uce35",
+                "soil_color": "\uac08\uc0c9, \ud68c\uac08\uc0c9",
+                "observation": "\ubcf4\ud1b5 \uc870\ubc00"
+            },
+            {
+                "depth_range": "10.0~14.5m",
+                "soil_name": "\ud48d\ud654\ud1a0",
+                "soil_color": "\uac08\uc0c9, \ub2f4\uac08\uc0c9",
+                "observation": "\ub9e4\uc6b0 \uc870\ubc00"
+            },
+            {
+                "depth_range": "14.5~23.0m",
+                "soil_name": "\uc5f0\uc554\uce35",
+                "soil_color": "",
+                "observation": "\ubcf4\ud1b5 \ud48d\ud654~\uc57d\uac04 \ud48d\ud654, \ubcf4\ud1b5 \uac15\ud568~\uac15\ud568, \ubd80\ubd84\uc801 \ud30c\uc1c4 \ub300\ubc1c\ub2ec"
+            },
+            {
+                "depth_range": "0.0~23.0m",
+                "soil_name": "\uc5f0\uc554\uce35",
+                "soil_color": "",
+                "observation": "* \uc5f0\uc554\uce35\n- \uc2ec\ub3c4: 14.5~23.0m\n- \ud3b8\ub9c8\uc554\uc758 \uc5f0\uc554\n- \ub2f4\ud68c\uc0c9, \uc554\ud68c\uc0c9\n- \ubcf4\ud1b5\ud48d\ud654~\uc57d\uac04\ud48d\ud654\n- \ubcf4\ud1b5\uac15\ud568~\uac15\ud568\n- \ubd80\ubd84\uc801 \ud30c\uc1c4\ub300\ubc1c\ub2ec\n- 14.5~17.0m: TCR=71%, RQD=13%\n- 17.0~20.0m: TCR=75%, RQD=27%\n- 20.0~23.0m: TCR=80%, RQD=26%\n* \uc2ec\ub3c4 23.00M\uc5d0\uc11c \uc2dc\ucd94\uc885\ub8cc"
+            }
+        ]
+    },
+    {
+        "metadata": {
+            "HOLE_NO": "BH-2"
+        },
+        "soil_data": [
+            {
+                "depth_range": "0.0~2.6m",
+                "soil_name": "\ub9e4\ub9bd\uce35",
+                "soil_color": "\uac08\uc0c9, \ud68c\uc0c9",
+                "observation": "\ud63c\ud569 - \uc138\ub9bd~\uc911\ub9bd - \uc790\uac08 \ud06c\uae30: \uc57d 3~7cm, \ucd5c\uc0c1\ubd80 15cm \ucf58\ud06c\ub9ac\ud2b8 \ub9e4\ub9bd"
+            },
+            {
+                "depth_range": "2.6~4.5m",
+                "soil_name": "\ud1f4\uc801\uce35",
+                "soil_color": "\ud68c\uc0c9",
+                "observation": "\ud63c\ud569 - \uc138\ub9bd~\uc911\ub9bd"
+            },
+            {
+                "depth_range": "4.5~8.0m",
+                "soil_name": "\ud1f4\uc801\uce35",
+                "soil_color": "\ud68c\uc0c9",
+                "observation": "\ud63c\ud569 - \ubcf4\ud1b5 \uc5f0\uc57d"
+            },
+            {
+                "depth_range": "8.0~9.5m",
+                "soil_name": "\ud1f4\uc801\uce35",
+                "soil_color": "\ud68c\uc0c9",
+                "observation": "\ud63c\ud569 - \ubcf4\ud1b5 \uc870\ubc00 - \uc138\ub9bd~\uc911\ub9bd - \uc790\uac08 \ud06c\uae30: \uc57d 2~3cm"
+            },
+            {
+                "depth_range": "9.5~11.0m",
+                "soil_name": "\ud48d\ud654\ud1a0",
+                "soil_color": "\ud68c\uc0c9, \ub179\ud68c\uc0c9",
+                "observation": "\ud63c\ud569 - \ubcf4\ud1b5 \uc870\ubc00 - \uc138\ub9bd~\uc870\ub9bd"
+            },
+            {
+                "depth_range": "11.0~26.0m",
+                "soil_name": "\uc5f0\uc554\uce35",
+                "soil_color": "\ud68c\uc0c9, \ud68c\uc0c9",
+                "observation": "\ubcf4\ud1b5 \ud48d\ud654 - \ubcf4\ud1b5 \uac15\ud568 - \ubd80\ubd84\uc801 \ud30c\uc1c4, \uc218\uc9c1 \uc808\ub9ac \ubc1c\ub2ec"
+            }
+        ]
+    }
+]

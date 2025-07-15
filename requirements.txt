@@ -1,0 +1,14 @@
+openai
+asyncio
+base64
+streamlit
+pydantic
+asyncio-throttle
+aiohttp
+Pillow
+pdf2image
+poppler-utils
+nest-asyncio
+requests
+numpy
+pandas

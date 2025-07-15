@@ -1,0 +1,99 @@
+import streamlit as st
+import os
+from dotenv import load_dotenv
+
+from utils import (
+    pdf_to_images,
+    encode_image,
+    process_images_in_batches,  # Using the sync version of this function
+    merge_data,
+    merge_soil_and_sample_data
+)
+
+from pydantic_models import MetadataAndSoilData, MetadataAndSampleData
+from prompts import prompt_soil_data, prompt_sample_data
+
+# Load environment variables
+load_dotenv()
+base_url = os.getenv("BASE_URL", "")
+api_key = os.getenv("API_KEY", "")
+
+# Ensure temp_pdf directory exists
+if not os.path.exists("temp_pdf"):
+    os.makedirs("temp_pdf")
+
+# Create directories for output
+def create_directories(pdf_path):
+    output_dir = os.path.splitext(pdf_path)[0]
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    return output_dir
+
+# Main PDF upload handler
+def handle_pdf_upload():
+    uploaded_pdf = st.file_uploader("📄 Upload Geotechnical PDF", type="pdf")
+    
+    if uploaded_pdf:
+        pdf_path = f"temp_pdf/{uploaded_pdf.name}"
+        with open(pdf_path, "wb") as f:
+            f.write(uploaded_pdf.getbuffer())
+        st.success(f"✅ PDF uploaded: {uploaded_pdf.name}")
+        
+        # 1. Convert PDF to images
+        output_dir = create_directories(pdf_path)
+        st.info("🔄 Converting PDF to images...")
+        pdf_to_images(pdf_path, output_dir, fixed_length=4000, max_workers=4)
+        
+        # 2. Collect and encode image files
+        image_files = sorted([
+            os.path.join(output_dir, f) 
+            for f in os.listdir(output_dir) 
+            if f.lower().endswith((".png", ".jpg", ".jpeg"))
+        ])
+        
+        if not image_files:
+            st.error("❌ No image files found after PDF conversion.")
+            return
+        
+        image_base64_list = [encode_image(image_path) for image_path in image_files]
+        
+        # 3. Process images in batches (sync version)
+        st.info("⚙️ Processing images through the model...")
+        try:
+            soil_data, sample_data = process_images_in_batches(image_base64_list, base_url, api_key)
+        except Exception as e:
+            st.error(f"❌ Error during batch processing: {e}")
+            return
+        
+        # 4. Merge soil and sample data
+        st.info("🧩 Merging parsed data...")
+        try:
+            merged_soil_data, merged_sample_data = merge_data(soil_data, sample_data)
+            final_data = merge_soil_and_sample_data(merged_soil_data, merged_sample_data)
+        except Exception as e:
+            st.error(f"❌ Error during merging data: {e}")
+            return
+
+        # 5. Display buttons per HOLE_NO
+        if final_data:
+            display_hole_buttons(final_data)
+        else:
+            st.warning("⚠️ No data to display.")
+
+# Display buttons per HOLE_NO
+def display_hole_buttons(final_data):
+    hole_numbers = set(item['metadata'].get('HOLE_NO', 'UNKNOWN') for item in final_data)
+    st.subheader("🕳️ Select a HOLE_NO to view data:")
+    
+    for hole_no in sorted(hole_numbers):
+        if st.button(f"View Data for HOLE_NO: {hole_no}"):
+            selected_data = [item for item in final_data if item['metadata'].get('HOLE_NO') == hole_no]
+            st.json(selected_data)
+
+# Streamlit app entrypoint
+def main():
+    st.title("🧠 Geotechnical Report Analysis Agent")
+    handle_pdf_upload()
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,18 @@
+[project]
+name = "posco-streamlit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "nest-asyncio>=1.6.0",
+    "openai>=1.95.0",
+    "pillow>=11.3.0",
+    "pydentic>=0.0.1.dev3",
+    "pymupdf>=1.26.3",
+    "pyngrok>=7.2.12",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.46.1",
+    "vllm>=0.9.1",
+]
